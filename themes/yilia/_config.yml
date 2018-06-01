@@ -1,0 +1,126 @@
+# Header
+
+menu:
+  主页: /
+  所有文章: /allPages
+  随笔: /tags
+  相册: /photos
+
+# SubNav
+subnav:
+  github: "https://github.com/bonjour520"
+  weibo: "https://weibo.com/u/2085992960"
+  rss: /atom.xml
+  mail: "mailto:l342003386@qq.com"
+  qq: "342003386"
+  # weixin: "angelyipeng"
+  # zhihu: "#"
+  #jianshu: "#"
+  #douban: "#"
+  #segmentfault: "#"
+  #bilibili: "#"
+  #acfun: "#"
+  #facebook: "#"
+  #google: "#"
+  #twitter: "#"
+  #linkedin: "#"
+
+
+
+# 是否需要修改 root 路径
+# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
+# 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
+root:
+
+# Content
+
+# 文章太长，截断按钮文字
+excerpt_link: 阅读全文
+# 文章卡片右下角常驻链接，不需要请设置为false
+show_all_link: '展开全文'
+# 数学公式
+mathjax: false
+# 是否在新窗口打开链接
+open_in_new: false
+fancybox: true
+#是否开启动画效果
+animate: true
+
+# 打赏
+# 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
+reward_type: 2
+# 打赏wording
+reward_wording: '谢谢你请我吃糖果'
+# 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
+alipay: /assets/img/alipay.jpg
+# 微信二维码图片地址
+weixin: /assets/img/weixin.jpg
+
+# 目录
+# 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
+toc: 1
+# 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false
+toc_hide_index: true
+# 目录为空时的提示
+toc_empty_wording: '目录，不存在的…'
+
+# 是否有快速回到顶部的按钮
+top: true
+
+# Miscellaneous
+baidu_analytics: 'e8b1fa1cdd6b8c13fd7dbae214aeba84'
+google_analytics: ''
+favicon: /favicon.png
+
+#你的头像url
+avatar: /assets/blogImg/headimg.jpg
+
+#是否开启分享
+share_jia: true
+share_addthis: false
+
+#评论：1、多说；2、网易云跟帖；3、畅言；4、Disqus 不需要使用某项，直接设置值为false，或注释掉
+#具体请参考wiki：https://github.com/litten/hexo-theme-yilia/wiki/
+
+#1、多说
+duoshuo: false
+
+#2、网易云跟帖
+wangyiyun: false
+
+#3、畅言
+changyan_appid: 'cytk8FVsH'
+changyan_conf: '1931614a7be75a9a798112fec487f76b'
+
+#4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
+disqus: false
+
+# 样式定制 - 一般不需要修改，除非有很强的定制欲望…
+style:
+  # 头像上面的背景颜色
+  header: '#f2f2f2'
+  # 右滑板块背景
+  slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
+
+# slider的设置
+slider:
+  # 是否默认展开tags板块
+  showTags: false
+
+# 智能菜单
+# 如不需要，将该对应项置为false
+# 比如
+#smart_menu:
+#  friends: false
+smart_menu:
+  innerArchive: '所有文章'
+  # friends: '友链'
+  aboutme: '关于我'
+
+friends:
+  百度一下: http://www.baidu.com
+
+aboutme: Bonjour，<br/>易大师<br/>毕业于重庆科创职业学院，<br/>现就职于重庆步联科技公司<br/><br/>热爱网球和旅游，文艺范小生。<br/>目前是一枚前端web攻城狮小白。<br/><br/>人一能之，己百之; <br/>人十能之，己千之。
+
+# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
+baidu_push: true
