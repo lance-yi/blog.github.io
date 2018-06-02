@@ -3,22 +3,51 @@
 
 
     
-    
-    
   <url>
-    <loc>http://blog.ydsweb.cn/undefined/uncategorized/2018-06-01-hello-world.html</loc>
-    <lastmod>2018-06-01T06:55:12.663Z</lastmod>
+    <loc>http://blog.ydsweb.cn/notes/2018-06-02/ssl.html</loc>
+    <lastmod>2018-06-02T03:52:57.266Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2018-06-01T06:55:12.663Z</pubTime>
+        <title>腾讯免费安全认证（SSL）安装</title>
+        <pubTime>2018-06-02T02:30:51.000Z</pubTime>
         
+        <tag>liunx</tag>
+         
+        <tag>skill</tag>
+         
          
            
+             
+              <breadCrumb title="notes" url="http://blog.ydsweb.cn/categories/notes/"/>
+          
         </display>
     </data>
     </url>
 
+    
+    
+  <url>
+    <loc>http://blog.ydsweb.cn/life/2018-06-01/hello-world.html</loc>
+    <lastmod>2018-06-02T02:17:41.595Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2018-06-01T15:40:03.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="life" url="http://blog.ydsweb.cn/categories/life/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
     
     

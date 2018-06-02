@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ydsweb.cn/notes/2018-06-02/ssl.html</loc>
+    
+    <lastmod>2018-06-02T03:52:57.266Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ydsweb.cn/archives/index.html</loc>
     
-    <lastmod>2018-06-01T15:40:03.284Z</lastmod>
+    <lastmod>2018-06-02T02:28:41.376Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.ydsweb.cn/life/2018-06-01/hello-world.html</loc>
+    
+    <lastmod>2018-06-02T02:17:41.595Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.ydsweb.cn/photos/index.html</loc>
     
-    <lastmod>2018-06-01T11:55:15.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ydsweb.cn/undefined/uncategorized/2018-06-01-hello-world.html</loc>
-    
-    <lastmod>2018-06-01T06:55:12.663Z</lastmod>
+    <lastmod>2018-06-02T02:04:26.468Z</lastmod>
     
   </url>
   
