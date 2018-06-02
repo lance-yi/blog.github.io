@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ydsweb.cn/photos/ins.json</loc>
+    
+    <lastmod>2018-06-02T15:51:43.868Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ydsweb.cn/notes/2018-06-02/ssl.html</loc>
     
     <lastmod>2018-06-02T10:49:05.760Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://blog.ydsweb.cn/photos/index.html</loc>
     
     <lastmod>2018-06-02T02:04:26.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ydsweb.cn/photos/ins.json</loc>
-    
-    <lastmod>2017-07-28T18:51:08.000Z</lastmod>
     
   </url>
   
