@@ -5,15 +5,17 @@
     
   <url>
     <loc>http://blog.ydsweb.cn/notes/2018-06-02/ssl.html</loc>
-    <lastmod>2018-06-02T10:07:04.241Z</lastmod>
+    <lastmod>2018-06-02T10:49:05.760Z</lastmod>
     <data>
         <display>
-        <title>腾讯免费安全认证（SSL）安装</title>
+        <title>腾讯免费安全认证（SSL）安装(CentOS,LAMP)</title>
         <pubTime>2018-06-02T02:30:51.000Z</pubTime>
         
         <tag>liunx</tag>
          
         <tag>skill</tag>
+         
+        <tag>LAMP</tag>
          
          
            
