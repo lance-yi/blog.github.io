@@ -9,14 +9,14 @@
   <title>java初学者总结的一些注意事项 | Bonjour-Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="java有三个版本： 分别为 J2SE、J2EE和J2ME     - J2SE(Java 2 Platform Standard Edition) 标准版     - J2EE(Java 2 Platform Enterprise Edition) 企业版     - J2ME(Java 2 Platform Micro Edition) 微型版  注意: Java5.0版本后，J2SE、J2E">
-<meta name="keywords" content="java,skill">
+<meta name="keywords" content="skill,java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java初学者总结的一些注意事项">
 <meta property="og:url" content="http://blog.ydsweb.cn/notes/2018-06-05/javabeginner.html">
 <meta property="og:site_name" content="Bonjour-Blog">
 <meta property="og:description" content="java有三个版本： 分别为 J2SE、J2EE和J2ME     - J2SE(Java 2 Platform Standard Edition) 标准版     - J2EE(Java 2 Platform Enterprise Edition) 企业版     - J2ME(Java 2 Platform Micro Edition) 微型版  注意: Java5.0版本后，J2SE、J2E">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-06T03:15:03.955Z">
+<meta property="og:updated_time" content="2018-06-06T07:30:45.398Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java初学者总结的一些注意事项">
 <meta name="twitter:description" content="java有三个版本： 分别为 J2SE、J2EE和J2ME     - J2SE(Java 2 Platform Standard Edition) 标准版     - J2EE(Java 2 Platform Enterprise Edition) 企业版     - J2ME(Java 2 Platform Micro Edition) 微型版  注意: Java5.0版本后，J2SE、J2E">
@@ -344,6 +344,223 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> demoArray[];</span><br><span class="line"><span class="keyword">int</span>[] demoArray;</span><br><span class="line"></span><br><span class="line">arrayName=<span class="keyword">new</span> type[arraySize];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 通常，你可以在定义的同时分配空间，语法为：</span></span><br><span class="line">type arrayName[] = <span class="keyword">new</span> type[arraySize];</span><br></pre></td></tr></table></figure>
+<p>说明：</p>
+<ul>
+<li>上面讲的是静态数组。静态数组一旦被声明，它的容量就固定了，不容改变。所以在声明数组时，一定要考虑数组的最大容量，防止容量不够的现象。</li>
+<li>如果想在运行程序时改变容量，就需要用到数组列表(ArrayList，也称动态数组)或向量(Vector)。</li>
+<li>正是由于静态数组容量固定的缺点，实际开发中使用频率不高，被 ArrayList 或 Vector 代替，因为实际开发中经常需要向数组中添加或删除元素，而它的容量不好预估。</li>
+</ul>
+<h2 id="七、Java字符串操作"><a href="#七、Java字符串操作" class="headerlink" title="七、Java字符串操作"></a>七、Java字符串操作</h2><ul>
+<li>1) length() 方法  返回字符串的长度</li>
+<li>2) charAt() 方法  按照索引值获得字符串中的指定字符</li>
+<li>3) contains() 方法  检测字符串是否包含某个子串</li>
+<li>4) replace() 方法  字符串替换，用来替换字符串中所有指定的子串</li>
+<li>5) split() 方法  以指定字符串作为分隔符，对当前字符串进行分割，分割的结果是一个数组</li>
+</ul>
+<h2 id="八、Java-StringBuffer与StringBuider"><a href="#八、Java-StringBuffer与StringBuider" class="headerlink" title="八、Java StringBuffer与StringBuider"></a>八、Java StringBuffer与StringBuider</h2><pre><code>tring 的值是不可变的，每次对String的操作都会生成新的String对象，不仅效率低，而且耗费大量内存空间。
+StringBuffer类和String类一样，也用来表示字符串，但是StringBuffer的内部实现方式和String不同，在进行字符串处理时，不生成新的对象，在内存使用上要优于String。
+StringBuffer 默认分配16字节长度的缓冲区，当字符串超过该大小时，会自动增加缓冲区长度，而不是生成新的对象。
+</code></pre><p>StringBuffer不像String，只能通过 new 来创建对象，不支持简写方式，例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">StringBuffer str1 = <span class="keyword">new</span> StringBuffer();  <span class="comment">// 分配16个字节长度的缓冲区</span></span><br><span class="line">StringBuffer str2 = =<span class="keyword">new</span> StringBuffer(<span class="number">512</span>);  <span class="comment">// 分配512个字节长度的缓冲区</span></span><br><span class="line"><span class="comment">// 在缓冲区中存放了字符串，并在后面预留了16个字节长度的空缓冲区</span></span><br><span class="line">StringBuffer str3 = <span class="keyword">new</span> StringBuffer(<span class="string">"www.ydsweb.cn"</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>StringBuffer类的主要方法<ul>
+<li>append() 方法： 用于向当前字符串的末尾追加内容，类似于字符串的连接,调用该方法以后，StringBuffer对象的内容也发生改变。</li>
+<li>deleteCharAt()： 用来删除指定位置的字符，并将剩余的字符形成新的字符串</li>
+<li>insert() 方法： 用来在指定位置插入字符串，可以认为是append()的升级版</li>
+<li>setCharAt() 方法： 用来修改指定位置的字符</li>
+</ul>
+</li>
+</ul>
+<p><strong>总结</strong></p>
+<ul>
+<li>线程安全：<br>StringBuffer：线程安全<br>StringBuilder：线程不安全</li>
+<li>速度：<br>一般情况下，速度从快到慢为 StringBuilder &gt; StringBuffer &gt; String，当然这是相对的，不是绝对的</li>
+<li>使用环境：<br>操作少量的数据使用 String；<br>单线程操作大量数据使用 StringBuilder；<br>多线程操作大量数据使用 StringBuffer。</li>
+</ul>
+<h2 id="九、Java类与对象"><a href="#九、Java类与对象" class="headerlink" title="九、Java类与对象"></a>九、Java类与对象</h2><ul>
+<li>构造方法<ul>
+<li>构造方法不能被显示调用。</li>
+<li>构造方法不能有返回值，因为没有变量来接收返回值。</li>
+</ul>
+</li>
+<li>创建对象<ul>
+<li>声明：声明一个对象，包括对象名称和对象类型。</li>
+<li>实例化：使用关键字new来创建一个对象。</li>
+<li>初始化：使用new创建对象时，会调用构造方法初始化对象</li>
+</ul>
+</li>
+<li>java访问修饰符<ul>
+<li>父类中声明为public的方法在子类中也必须为public。</li>
+<li>父类中声明为protected的方法在子类中要么声明为protected，要么声明为public。不能声明为private。</li>
+<li>父类中默认修饰符声明的方法，能够在子类中声明为private。</li>
+<li>父类中声明为private的方法，不能够被继承。</li>
+<li>访问控制符可以让我们很方便的控制代码的权限：<ul>
+<li>当需要让自己编写的类被所有的其他类访问时，就可以将类的访问控制符声明为 public。</li>
+<li>当需要让自己的类只能被自己的包中的类访问时，就可以省略访问控制符。</li>
+<li>当需要控制一个类中的成员数据时，可以将这个类中的成员数据访问控制符设置为 public、protected，或者省略。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Java变量的作用域<ul>
+<li>方法内部除了能访问方法级的变量，还可以访问类级和实例级的变量。</li>
+<li>块内部能够访问类级、实例级变量，如果块被包含在方法内部，它还可以访问方法级的变量。</li>
+<li>方法级和块级的变量必须被显示地初始化，否则不能访问。</li>
+</ul>
+</li>
+<li>Java this关键字详解<ul>
+<li>在构造方法中调用另一个构造方法，调用动作必须置于最起始的位置。</li>
+<li>不能在构造方法以外的任何方法内调用构造方法。</li>
+<li>在一个构造方法内只能调用一个构造方法。</li>
+</ul>
+</li>
+<li>Java方法重载<ul>
+<li>说明：<ul>
+<li>参数列表不同包括：个数不同、类型不同和顺序不同。</li>
+<li>仅仅参数变量名称不同是不可以的。</li>
+<li>跟成员方法一样，构造方法也可以重载。</li>
+<li>声明为final的方法不能被重载。</li>
+<li>声明为static的方法不能被重载，但是能够被再次声明。</li>
+</ul>
+</li>
+<li>方法的重载的规则：<ul>
+<li>方法名称必须相同。</li>
+<li>参数列表必须不同（个数不同、或类型不同、参数排列顺序不同等）。</li>
+<li>方法的返回类型可以相同也可以不相同。</li>
+<li>仅仅返回类型不同不足以成为方法的重载。</li>
+</ul>
+</li>
+<li>方法重载的实现：<ul>
+<li>方法名称相同时，编译器会根据调用方法的参数个数、参数类型等去逐个匹配，以选择对应的方法，如果匹配失败，则编译器报错，这叫做重载分辨。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Java类的基本运行顺序</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Demo</span><span class="params">()</span></span>&#123;</span><br><span class="line">        name = <span class="string">"易大师"</span>;</span><br><span class="line">        age = <span class="number">24</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Demo obj = <span class="keyword">new</span> Demo();</span><br><span class="line">        System.out.println(obj.name + <span class="string">"的年龄是"</span> + obj.age);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>基本运行顺序是：</p>
+<pre><code>1. 先运行到第 9 行，这是程序的入口。
+2. 然后运行到第 10 行，这里要 new 一个Demo，就要调用 Demo 的构造方法。
+3. 就运行到第 5 行，注意：可能很多人觉得接下来就应该运行第 6 行了，错！初始化一个类，必须先初始化它的属性。
+4. 因此运行到第 2 行，然后是第 3 行。
+5. 属性初始化完过后，才回到构造方法，执行里面的代码，也就是第 6 行、第 7 行。
+6. 然后是第8行，表示 new 一个Demo实例完成。
+7. 然后回到 main 方法中执行第 11 行。
+8. 然后是第 12 行，main方法执行完毕。
+</code></pre><ul>
+<li>Integer自动装箱</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> m = <span class="number">500</span>;</span><br><span class="line">        Integer obj = m;  <span class="comment">// 自动装箱</span></span><br><span class="line">        <span class="keyword">int</span> n = obj;  <span class="comment">// 自动拆箱</span></span><br><span class="line">        System.out.println(<span class="string">"n = "</span> + n);</span><br><span class="line">      </span><br><span class="line">        Integer obj1 = <span class="number">500</span>;</span><br><span class="line">        System.out.println(<span class="string">"obj 等价于 obj1？"</span> + obj.equals(obj1));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行结果</span></span><br><span class="line"><span class="comment">// n = 500</span></span><br><span class="line"><span class="comment">// obj 等价于 obj1？true</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>Java源文件的声明规则<br>当在一个源文件中定义多个类，并且还有import语句和package语句时，要特别注意这些规则：</li>
+</ul>
+<ol>
+<li>一个源文件中只能有一个public类。</li>
+<li>一个源文件可以有多个非public类。</li>
+<li>源文件的名称应该和public类的类名保持一致。例如：源文件中public类的类名是Employee，那么源文件应该命名为Employee.java。</li>
+<li>如果一个类定义在某个包中，那么package语句应该在源文件的首行。</li>
+<li>如果源文件包含import语句，那么应该放在package语句和类定义之间。如果没有package语句，那么import语句应该在源文件中最前面。</li>
+<li>import语句和package语句对源文件中定义的所有类都有效。在同一源文件中，不能给不同的类不同的包声明。</li>
+<li>类有若干种访问级别，并且类也分不同的类型：抽象类和final类等。这些将在后续章节介绍。</li>
+<li>除了上面提到的几种类型，Java还有一些特殊的类，如内部类、匿名类。</li>
+</ol>
+<h2 id="十、Java继承和多态"><a href="#十、Java继承和多态" class="headerlink" title="十、Java继承和多态"></a>十、Java继承和多态</h2><ul>
+<li>Java继承的概念与实现<br>构造方法不能被继承，掌握这一点很重要。 一个类能得到构造方法，只有两个办法：编写构造方法，或者根本没有构造方法，类有一个默认的构造方法。</li>
+<li><p>Java super关键字<br>super 关键字的功能：</p>
+<ul>
+<li>调用父类中声明为 private 的变量。</li>
+<li>点取已经覆盖了的方法。</li>
+<li>作为方法名表示父类构造方法。<br>注意：</li>
+<li>在构造方法中调用另一个构造方法，调用动作必须置于最起始的位置。</li>
+<li>不能在构造方法以外的任何方法内调用构造方法。</li>
+<li>在一个构造方法内只能调用一个构造方法。</li>
+</ul>
+</li>
+<li><p>Java继承中方法的覆盖和重载</p>
+<ul>
+<li><p>方法覆盖的原则：</p>
+<ol>
+<li>覆盖方法的返回类型、方法名称、参数列表必须与原方法的相同。</li>
+<li>覆盖方法不能比原方法访问性差（即访问权限不允许缩小）。</li>
+<li>覆盖方法不能比原方法抛出更多的异常。</li>
+<li>被覆盖的方法不能是final类型，因为final修饰的方法是无法覆盖的。</li>
+<li>被覆盖的方法不能为private，否则在其子类中只是新定义了一个方法，并没有对其进行覆盖。</li>
+<li>被覆盖的方法不能为static。如果父类中的方法为静态的，而子类中的方法不是静态的，但是两个方法除了这一点外其他都满足覆盖条件，那么会发生编译错误；反之亦然。即使父类和子类中的方法都是静态的，并且满足覆盖条件，但是仍然不会发生覆盖，因为静态方法是在编译的时候把静态方法和类的引用类型进行匹配。</li>
+</ol>
+</li>
+<li><p>覆盖和重载的不同：</p>
+<ol>
+<li>方法覆盖要求参数列表必须一致，而方法重载要求参数列表必须不一致。</li>
+<li>方法覆盖要求返回类型必须一致，方法重载对此没有要求。</li>
+<li>方法覆盖只能用于子类覆盖父类的方法，方法重载用于同一个类中的所有方法（包括从父类中继承而来的方法）。</li>
+<li>方法覆盖对方法的访问权限和抛出的异常有特殊的要求，而方法重载在这方面没有任何限制。</li>
+<li>父类的一个方法只能被子类覆盖一次，而一个方法可以在所有的类中可以被重载多次。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>Java多态和动态绑定<br><strong>多态存在的三个必要条件：要有继承、要有重写、父类变量引用子类对象。</strong></p>
+<ul>
+<li>当使用多态方式调用方法时：<ul>
+<li>首先检查父类中是否有该方法，如果没有，则编译错误；如果有，则检查子类是否覆盖了该方法。</li>
+<li>如果子类覆盖了该方法，就调用子类的方法，否则调用父类方法。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Java instanceof 运算符<br>instanceof 运算符用来判断一个变量所引用的对象的实际类型，注意是它引用的对象的类型，不是变量的类型</p>
+</li>
+<li><p>多态对象的类型转换<br>不能直接将父类的对象强制转换为子类类型，只能将向上转型后的子类对象再次转换为子类类型。也就是说，<strong>子类对象必须向上转型后，才能再向下转型。</strong></p>
+</li>
+<li><p>ava static关键字</p>
+<ul>
+<li>类变量(class variables)用关键字 static 修饰，在类加载的时候，分配类变量的内存，以后再生成类的实例对象时，将共享这块内存（类变量），任何一个对象对类变量的修改，都会影响其它对象。外部有两种访问方式：通过对象来访问或通过类名来访问。</li>
+<li>关于静态变量和静态方法的总结：</li>
+</ul>
+<ol>
+<li>一个类的静态方法只能访问静态变量；</li>
+<li>一个类的静态方法不能够直接调用非静态方法；</li>
+<li>如访问控制权限允许，静态变量和静态方法也可以通过对象来访问，但是不被推荐；</li>
+<li>静态方法中不存在当前对象，因而不能使用this，当然也不能使用 super；</li>
+<li>静态方法不能被非静态方法覆盖；</li>
+<li>构造方法不允许声明为 static 的；</li>
+<li>局部变量不能使用static修饰。</li>
+</ol>
+</li>
+<li><p>Java final关键字<br>final 所修饰的数据具有“终态”的特征，表示“最终的”意思。具体规定如下：</p>
+</li>
+</ul>
+<ol>
+<li>final 修饰的类不能被继承。</li>
+<li>final 修饰的方法不能被子类重写。</li>
+<li>final 修饰的变量（成员变量或局部变量）即成为常量，只能赋值一次。</li>
+<li>final 修饰的成员变量必须在声明的同时赋值，如果在声明的时候没有赋值，那么只有一次赋值的机会，而且只能在构造方法中显式赋值，然后才能使用。</li>
+<li>final 修饰的局部变量可以只声明不赋值，然后再进行一次性的赋值。</li>
+</ol>
+<ul>
+<li><p>Java Object类</p>
+<ul>
+<li><p>equals()方法用来检测一个对象是否等价于另外一个对象，语法为： public boolean equals(Object obj)</p>
+<p>  注意：</p>
+<ol>
+<li>equals()方法只能比较引用类型，“==”可以比较引用类型及基本类型。</li>
+<li>当用 equals() 方法进行比较时，对类 File、String、Date 及包装类来说，是比较类型及内容而不考虑引用的是否是同一个实例。</li>
+<li>用“==”进行比较时，符号两边的数据类型必须一致（可自动转换的数据类型除外），否则编译出错，而用 equals 方法比较的两个数据只要都是引用类型即可。</li>
+</ol>
+</li>
+<li><p>hashCode() 方法</p>
+<ol>
+<li>在同一个应用程序执行期间，对同一个对象调用 hashCode()，必须返回相同的整数结果——前提是 equals()所比较的信息都不曾被改动过。至于同一个应用程序在不同执行期所得的调用结果，无需一致。</li>
+<li>如果两个对象被equals()方法视为相等，那么对这两个对象调用hashCode()必须获得相同的整数结果。</li>
+<li>如果两个对象被equals()方法视为不相等，那么对这两个对象调用 hashCode()不必产生不同的整数结果。然而程序员应该意识到，对不同对象产生不同的整数结果，有可能提升hashTable（后面会学到，集合框架中的一个类）的效率。</li>
+</ol>
+</li>
+<li>toString() 方法<br>  返回当前对象的类型和内存地址信息</li>
+</ul>
+</li>
+</ul>
+<p>持续更新中~</p>
 
       
 
@@ -388,11 +605,11 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">skill</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">skill</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
@@ -681,14 +898,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">skill</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">life</a>
               </li>
              
@@ -701,7 +910,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">skill</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">LAMP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
             
             <div class="clearfix"></div>
