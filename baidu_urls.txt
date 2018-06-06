@@ -1,2 +1,3 @@
+http://blog.ydsweb.cn/notes/2018-06-05/javabeginner.html
 http://blog.ydsweb.cn/notes/2018-06-02/ssl.html
 http://blog.ydsweb.cn/life/2018-06-01/hello-world.html

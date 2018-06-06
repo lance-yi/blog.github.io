@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.ydsweb.cn/"/>
-  <updated>2018-06-02T10:49:05.760Z</updated>
+  <updated>2018-06-06T03:15:03.955Z</updated>
   <id>http://blog.ydsweb.cn/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java初学者总结的一些注意事项</title>
+    <link href="http://blog.ydsweb.cn/notes/2018-06-05/javabeginner.html"/>
+    <id>http://blog.ydsweb.cn/notes/2018-06-05/javabeginner.html</id>
+    <published>2018-06-05T02:47:35.000Z</published>
+    <updated>2018-06-06T03:15:03.955Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>java有三个版本： 分别为 J2SE、J2EE和J2ME    - J2SE(Java 2 Platform Standard Edition) 标准版    - J2EE(Java 2 Platform Enterprise Edition) 企业版    - J2ME(Java 2 Platform Micro Edition) 微型版注意: Java5.0版本后，J2SE、J2EE、J2ME分别更名为JavaSE、JavaEE、JavaME，由于习惯的原因，我们依然称之为J2SE、J2EE、J2ME</code></pre>  <a id="more"></a><h2 id="一、开发环境搭建"><a href="#一、开发环境搭建" class="headerlink" title="一、开发环境搭建"></a>一、开发环境搭建</h2><ul><li><p><strong>JDK下载和安装</strong> <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" target="_blank" rel="noopener">javaSE</a></p></li><li><p><strong>环境变量的设置</strong></p><ul><li>JAVA_HOME：设为JDK的安装路径(如D:\Program Files\jdk1.7.0_71)，此路径下包括lib，bin，jre等文件夹（此变量最好设置，因为以后运行tomcat，eclipse等都需要依靠此变量）。</li><li>Path：使得系统可以在任何路径下识别java命令，设为：%JAVA_HOME%\bin。%JAVA_HOME%就是引用前面指定的JAVA_HOME变量.</li><li>CLASSPATH：Java运行环境加载类的路径，只有类在classpath中，才能被识别和加载，设为 .;%JAVA_HOME%\lib（注意前面的点号(.)，点号表示当前路径）。</li></ul></li><li><p>Eclipse安装 <a href="http://www.eclipse.org/downloads/" target="_blank" rel="noopener">Eclipse下载</a><br><em>注意：一定要设置环境变量，Eclipse 的运行依赖于这些环境变量</em></p></li></ul><h2 id="二、API-Application-Programming-Interface-应用程序编程接口-java-API文档"><a href="#二、API-Application-Programming-Interface-应用程序编程接口-java-API文档" class="headerlink" title="二、API(Application Programming Interface, 应用程序编程接口) java API文档"></a>二、API(Application Programming Interface, 应用程序编程接口) <a href="http://www.oracle.com/technetwork/java/api" target="_blank" rel="noopener">java API文档</a></h2><table><thead><tr><th>包名</th><th>说明</th></tr></thead><tbody><tr><td>java.lang</td><td>该包提供了Java编程的基础类，例如 Object、Math、String、StringBuffer、System、Thread等，不使用该包就很难编写Java代码了。</td></tr><tr><td>java.util</td><td>该包提供了包含集合框架、遗留的集合类、事件模型、日期和时间实施、国际化和各种实用工具类（字符串标记生成器、随机数生成器和位数组）。</td></tr><tr><td>java.io</td><td>该包通过文件系统、数据流和序列化提供系统的输入与输出。</td></tr><tr><td>java.net</td><td>该包提供实现网络应用与开发的类。</td></tr><tr><td>java.sql</td><td>该包提供了使用Java语言访问并处理存储在数据源（通常是一个关系型数据库）中的数据API。</td></tr><tr><td>java.awt</td><td>这两个包提供了GUI设计与开发的类。java.awt包提供了创建界面和绘制图形图像的所有类，而javax.swing包提供了一组“轻量级”的组件，尽量让这些组件在所有平台上的工作方式相同。</td></tr><tr><td>java.text</td><td>提供了与自然语言无关的方式来处理文本、日期、数字和消息的类和接口。</td></tr></tbody></table><h2 id="三、Java-import"><a href="#三、Java-import" class="headerlink" title="三、Java import"></a>三、Java import</h2><p><strong>注意：</strong></p><ul><li>import 只能导入包所包含的类，而不能导入包。</li><li>为方便起见，我们一般不导入单独的类，而是导入包下所有的类，例如 import java.util.*;。</li><li>Java 编译器默认为所有的 Java 程序导入了 JDK 的 java.lang 包中所有的类（import java.lang.*;）</li></ul><h2 id="四、Java数据类型"><a href="#四、Java数据类型" class="headerlink" title="四、Java数据类型"></a>四、Java数据类型</h2><p>Java中共有8种基本数据类型，包括4 种整型、2 种浮点型、1 种字符型、1 种布尔型，请见下表。</p><table><thead><tr><th>数据类型</th><th>说明</th><th>所占内存</th><th>例子</th><th>备注</th></tr></thead><tbody><tr><td>byte</td><td>字节型</td><td>1 byte</td><td>3, 127</td><td></td></tr><tr><td>short</td><td>短整型</td><td>2 bytes</td><td>3, 32767</td><td></td></tr><tr><td>int</td><td>整型</td><td>4 bytes</td><td>3, 21474836</td><td></td></tr><tr><td>long</td><td>长整型</td><td>8 bytes</td><td>3L, 92233720368L</td><td>long最后要有一个L字母（大小写无所谓）。</td></tr><tr><td>float</td><td>单精度浮点型</td><td>4 bytes</td><td>1.2F, 223.56F</td><td>float最后要有一个F字母（大小写无所谓）。</td></tr><tr><td>double</td><td>双精度浮点型</td><td>8 bytes</td><td>1.2, 1.2D, 223.56, 223.56D</td><td>double最后最好有一个D字母（大小写无所谓）。</td></tr><tr><td>char</td><td>字符型</td><td>2 bytes</td><td>‘a’, ‘A’</td><td>字符型数据只能是一个字符，由单引号包围</td></tr><tr><td>boolean</td><td>布尔型</td><td>1 bit</td><td>true, false</td><td>–</td></tr></tbody></table><h2 id="五、Java数据类型转换"><a href="#五、Java数据类型转换" class="headerlink" title="五、Java数据类型转换"></a>五、Java数据类型转换</h2><ul><li>自动数据类型转换<br>自动转换按从低到高的顺序转换。不同类型数据间的优先关系如下：<br>低—————————————————-&gt;高<br>byte,short,char-&gt; int -&gt; long -&gt; float -&gt; double</li><li>强制数据类型转换<br>强制转换的格式是在需要转型的数据前加上“()”，然后在括号内加入需要转化的数据类型。有的数据经过转型运算后，精度会丢失，而有的会更加精确，下面的例子可以说明这个问题。 </li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x;</span><br><span class="line">        <span class="keyword">double</span> y;</span><br><span class="line">        x = (<span class="keyword">int</span>)<span class="number">34.56</span> + (<span class="keyword">int</span>)<span class="number">11.2</span>;  <span class="comment">// 丢失精度</span></span><br><span class="line">        y = (<span class="keyword">double</span>)x + (<span class="keyword">double</span>)<span class="number">10</span> + <span class="number">1</span>;  <span class="comment">// 提高精度</span></span><br><span class="line">        System.out.println(<span class="string">"x="</span> + x);</span><br><span class="line">        System.out.println(<span class="string">"y="</span> + y);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行结果：</span></span><br><span class="line"><span class="comment">// x=45</span></span><br><span class="line"><span class="comment">// y=56.0</span></span><br></pre></td></tr></table></figure><h2 id="六、Java数组的定义和使用"><a href="#六、Java数组的定义和使用" class="headerlink" title="六、Java数组的定义和使用"></a>六、Java数组的定义和使用</h2><ul><li>数组的定义和内存分配 <ul><li>定义数组语法：<br>  type arrayName[];<br>  type[] arrayName;</li><li>分配内存空间<br>  arrayName=new type[arraySize];</li></ul></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> demoArray[];</span><br><span class="line"><span class="keyword">int</span>[] demoArray;</span><br><span class="line"></span><br><span class="line">arrayName=<span class="keyword">new</span> type[arraySize];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 通常，你可以在定义的同时分配空间，语法为：</span></span><br><span class="line">type arrayName[] = <span class="keyword">new</span> type[arraySize];</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;java有三个版本： 分别为 J2SE、J2EE和J2ME
+    - J2SE(Java 2 Platform Standard Edition) 标准版
+    - J2EE(Java 2 Platform Enterprise Edition) 企业版
+    - J2ME(Java 2 Platform Micro Edition) 微型版
+
+注意: Java5.0版本后，J2SE、J2EE、J2ME分别更名为JavaSE、JavaEE、JavaME，由于习惯的原因，我们依然称之为J2SE、J2EE、J2ME
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="notes" scheme="http://blog.ydsweb.cn/categories/notes/"/>
+    
+    
+      <category term="java" scheme="http://blog.ydsweb.cn/tags/java/"/>
+    
+      <category term="skill" scheme="http://blog.ydsweb.cn/tags/skill/"/>
+    
+  </entry>
   
   <entry>
     <title>腾讯免费安全认证（SSL）安装(CentOS,LAMP)</title>
@@ -34,9 +64,9 @@
       <category term="notes" scheme="http://blog.ydsweb.cn/categories/notes/"/>
     
     
-      <category term="liunx" scheme="http://blog.ydsweb.cn/tags/liunx/"/>
-    
       <category term="skill" scheme="http://blog.ydsweb.cn/tags/skill/"/>
+    
+      <category term="liunx" scheme="http://blog.ydsweb.cn/tags/liunx/"/>
     
       <category term="LAMP" scheme="http://blog.ydsweb.cn/tags/LAMP/"/>
     
