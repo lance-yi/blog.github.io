@@ -4,43 +4,133 @@
 
     
   <url>
-    <loc>http://blog.ydsweb.cn/notes/2018-06-17/imooctask.html</loc>
+    <loc>https://blog.LanceYI.com/notes/2018-10-04/CentOS%E4%B8%8A%E9%83%A8%E7%BD%B2Spring-boot%E9%A1%B9%E7%9B%AE.html</loc>
+    <lastmod>2018-10-04T13:09:38.208Z</lastmod>
+    <data>
+        <display>
+        <title>CentOS上部署Spring boot项目</title>
+        <pubTime>2018-10-04T13:04:11.000Z</pubTime>
+        
+        <tag>skill</tag>
+         
+        <tag>java</tag>
+         
+        <tag>Spring Boot</tag>
+         
+         
+           
+             
+              <breadCrumb title="notes" url="https://blog.LanceYI.com/categories/notes/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://blog.LanceYI.com/notes/2018-10-04/GIT%E4%BD%BF%E7%94%A8%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD.html</loc>
+    <lastmod>2018-10-04T13:03:46.767Z</lastmod>
+    <data>
+        <display>
+        <title>GIT使用出现错误解决方案-持续更新中</title>
+        <pubTime>2018-10-04T13:02:56.000Z</pubTime>
+        
+        <tag>skill</tag>
+         
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="notes" url="https://blog.LanceYI.com/categories/notes/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://blog.LanceYI.com/notes/2018-10-04/intellij-IDEA-%E4%BD%BF%E7%94%A8%E9%83%A8%E7%BD%B2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.html</loc>
+    <lastmod>2018-10-04T13:01:28.009Z</lastmod>
+    <data>
+        <display>
+        <title>intellij IDEA 使用部署注意事项</title>
+        <pubTime>2018-10-04T13:00:25.000Z</pubTime>
+        
+        <tag>skill</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="notes" url="https://blog.LanceYI.com/categories/notes/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://blog.LanceYI.com/notes/2018-10-04/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7SPA%E6%94%AF%E4%BB%98%E9%98%B2%E6%AD%A2%E9%87%87%E5%9D%91%E6%8C%87%E5%8D%97.html</loc>
+    <lastmod>2018-10-04T12:58:41.659Z</lastmod>
+    <data>
+        <display>
+        <title>vue开发微信公众号支付防止采坑指南秘籍</title>
+        <pubTime>2018-10-04T12:50:49.000Z</pubTime>
+        
+        <tag>skill</tag>
+         
+        <tag>wechat</tag>
+         
+         
+           
+             
+              <breadCrumb title="notes" url="https://blog.LanceYI.com/categories/notes/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://blog.LanceYI.com/notes/2018-06-05/javabeginner.html</loc>
+    <lastmod>2018-10-04T12:51:43.103Z</lastmod>
+    <data>
+        <display>
+        <title>java初学者总结的一些注意事项</title>
+        <pubTime>2018-06-05T02:47:35.000Z</pubTime>
+        
+        <tag>skill</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="notes" url="https://blog.LanceYI.com/categories/notes/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://blog.LanceYI.com/notes/2018-06-17/imooctask.html</loc>
     <lastmod>2018-06-17T16:10:21.631Z</lastmod>
     <data>
         <display>
         <title>自学Java中，一份答答租车系统作业~</title>
         <pubTime>2018-06-17T15:31:00.000Z</pubTime>
         
-        <tag>java</tag>
-         
         <tag>skill</tag>
+         
+        <tag>java</tag>
          
          
            
              
-              <breadCrumb title="notes" url="http://blog.ydsweb.cn/categories/notes/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.ydsweb.cn/notes/2018-06-05/javabeginner.html</loc>
-    <lastmod>2018-06-06T07:30:45.398Z</lastmod>
-    <data>
-        <display>
-        <title>java初学者总结的一些注意事项</title>
-        <pubTime>2018-06-05T02:47:35.000Z</pubTime>
-        
-        <tag>java</tag>
-         
-        <tag>skill</tag>
-         
-         
-           
-             
-              <breadCrumb title="notes" url="http://blog.ydsweb.cn/categories/notes/"/>
+              <breadCrumb title="notes" url="https://blog.LanceYI.com/categories/notes/"/>
           
         </display>
     </data>
@@ -50,7 +140,7 @@
     
     
   <url>
-    <loc>http://blog.ydsweb.cn/notes/2018-06-02/ssl.html</loc>
+    <loc>https://blog.LanceYI.com/notes/2018-06-02/ssl.html</loc>
     <lastmod>2018-06-02T10:49:05.760Z</lastmod>
     <data>
         <display>
@@ -66,7 +156,7 @@
          
            
              
-              <breadCrumb title="notes" url="http://blog.ydsweb.cn/categories/notes/"/>
+              <breadCrumb title="notes" url="https://blog.LanceYI.com/categories/notes/"/>
           
         </display>
     </data>
@@ -75,7 +165,7 @@
     
     
   <url>
-    <loc>http://blog.ydsweb.cn/life/2018-06-01/hello-world.html</loc>
+    <loc>https://blog.LanceYI.com/life/2018-06-01/hello-world.html</loc>
     <lastmod>2018-06-02T02:17:41.595Z</lastmod>
     <data>
         <display>
@@ -89,7 +179,7 @@
          
            
              
-              <breadCrumb title="life" url="http://blog.ydsweb.cn/categories/life/"/>
+              <breadCrumb title="life" url="https://blog.LanceYI.com/categories/life/"/>
           
         </display>
     </data>

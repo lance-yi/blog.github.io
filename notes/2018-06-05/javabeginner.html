@@ -5,18 +5,18 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://blog.ydsweb.cn">
-  <title>java初学者总结的一些注意事项 | Bonjour-Blog</title>
+  <link rel="dns-prefetch" href="https://blog.LanceYI.com">
+  <title>java初学者总结的一些注意事项 | Lance YI-Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="java有三个版本： 分别为 J2SE、J2EE和J2ME     - J2SE(Java 2 Platform Standard Edition) 标准版     - J2EE(Java 2 Platform Enterprise Edition) 企业版     - J2ME(Java 2 Platform Micro Edition) 微型版  注意: Java5.0版本后，J2SE、J2E">
-<meta name="keywords" content="java,skill">
+<meta name="keywords" content="skill,java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java初学者总结的一些注意事项">
-<meta property="og:url" content="http://blog.ydsweb.cn/notes/2018-06-05/javabeginner.html">
-<meta property="og:site_name" content="Bonjour-Blog">
+<meta property="og:url" content="https://blog.LanceYI.com/notes/2018-06-05/javabeginner.html">
+<meta property="og:site_name" content="Lance YI-Blog">
 <meta property="og:description" content="java有三个版本： 分别为 J2SE、J2EE和J2ME     - J2SE(Java 2 Platform Standard Edition) 标准版     - J2EE(Java 2 Platform Enterprise Edition) 企业版     - J2ME(Java 2 Platform Micro Edition) 微型版  注意: Java5.0版本后，J2SE、J2E">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-06T07:30:45.398Z">
+<meta property="og:updated_time" content="2018-10-04T12:51:43.103Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java初学者总结的一些注意事项">
 <meta name="twitter:description" content="java有三个版本： 分别为 J2SE、J2EE和J2ME     - J2SE(Java 2 Platform Standard Edition) 标准版     - J2EE(Java 2 Platform Enterprise Edition) 企业版     - J2ME(Java 2 Platform Micro Edition) 微型版  注意: Java5.0版本后，J2SE、J2E">
@@ -52,14 +52,14 @@ var _hmt = _hmt || [];
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #f2f2f2"></div>
+<div class="overlay" style="background: #f7f7f7"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="" class="profilepic">
 			<img src="/assets/blogImg/headimg.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="">BonJour</a></h1>
+		  <h1 class="header-author"><a href="">Lance YI</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">以戒为师 以苦为师</p>
@@ -113,7 +113,7 @@ var _hmt = _hmt || [];
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #f2f2f2"></div>
+  	<div class="overlay js-overlay" style="background: #f7f7f7"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -123,7 +123,7 @@ var _hmt = _hmt || [];
 				<img src="/assets/blogImg/headimg.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">BonJour</h1>
+			  <h1 class="header-author js-header-author">Lance YI</h1>
 			</hgroup>
 			
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>以戒为师 以苦为师<i class="icon icon-quo-right"></i></p>
@@ -560,6 +560,24 @@ StringBuffer 默认分配16字节长度的缓冲区，当字符串超过该大�
 </ul>
 </li>
 </ul>
+<h2 id="十一、Java抽象类的概念和使用"><a href="#十一、Java抽象类的概念和使用" class="headerlink" title="十一、Java抽象类的概念和使用"></a>十一、Java抽象类的概念和使用</h2><ul>
+<li>使用 abstract 修饰符来表示抽象方法和抽象类。<ul>
+<li>抽象类不能直接使用，必须用子类去实现抽象类，然后使用其子类的实例。然而可以创建一个变量，其类型是一个抽象类，并让它指向具体子类的一个实例，也就是可以使用抽象类来充当形参，实际实现类作为实参，也就是多态的应用。</li>
+<li>不能有抽象构造方法或抽象静态方法。 </li>
+</ul>
+</li>
+</ul>
+<p>在下列情况下，一个类将成为抽象类：</p>
+<ul>
+<li>当一个类的一个或多个方法是抽象方法时；</li>
+<li>当类是一个抽象类的子类，并且不能为任何抽象方法提供任何实现细节或方法主体时；</li>
+<li>当一个类实现一个接口，并且不能为任何抽象方法提供实现细节或方法主体时；注意：<ul>
+<li>这里说的是这些情况下一个类将成为抽象类，没有说抽象类一定会有这些情况。</li>
+<li>一个典型的错误：抽象类一定包含抽象方法。 但是反过来说“包含抽象方法的类一定是抽象类”就是正确的。</li>
+<li>事实上，抽象类可以是一个完全正常实现的类</li>
+</ul>
+</li>
+</ul>
 <p>持续更新中~</p>
 
       
@@ -605,11 +623,11 @@ StringBuffer 默认分配16字节长度的缓冲区，当字符串超过该大�
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">skill</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">skill</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
@@ -676,7 +694,7 @@ StringBuffer 默认分配16字节长度的缓冲区，当字符串超过该大�
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://blog.ydsweb.cn/notes/2018-06-05/javabeginner.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://blog.LanceYI.com/notes/2018-06-05/javabeginner.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -756,7 +774,7 @@ StringBuffer 默认分配16字节长度的缓冲区，当字符串超过该大�
       <div class="footer-left">
         &copy;
         2018
-          BonJour
+          Lance YI
       </div>
       <!--统计start-->
       <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
@@ -915,11 +933,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">skill</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">skill</a>
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">wechat</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1010,7 +1040,7 @@ MathJax.Hub.Queue(function() {
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">BonJour，&lt;br/&gt;&lt;br/&gt;易大师&lt;br/&gt;毕业于重庆科创职业学院，&lt;br/&gt;现就职于润民（中国）有限公司&lt;br/&gt;&lt;br/&gt;热爱网球和旅游，文艺范小生。&lt;br/&gt;目前是一枚前端web攻城狮小白。&lt;br/&gt;&lt;br/&gt;人一能之，己百之; &lt;br/&gt;人十能之，己千之。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">Lance.YI，&lt;br/&gt;&lt;br/&gt;易大师&lt;br/&gt;毕业于重庆科创职业学院，&lt;br/&gt;现就职于润民（中国）有限公司&lt;br/&gt;&lt;br/&gt;热爱网球和旅游，文艺范小生。&lt;br/&gt;目前是一枚前端web攻城狮小白。&lt;br/&gt;&lt;br/&gt;人一能之，己百之; &lt;br/&gt;人十能之，己千之。</div>
   	  	
     	</section>
     
