@@ -198,15 +198,12 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="yum方式安装JDK"><a href="#yum方式安装JDK" class="headerlink" title="yum方式安装JDK"></a>yum方式安装JDK</h2><ol>
-<li>直接打开 <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">java SE官网</a> 选择java版本</li>
-<li>选择对应的版本</li>
+        <h2 id="rpm方式安装JDK"><a href="#rpm方式安装JDK" class="headerlink" title="rpm方式安装JDK"></a>rpm方式安装JDK</h2><ol>
+<li>下载rpm安装包上传到Linux服务器上</li>
+<li>安装</li>
 </ol>
-<p><img src="http://markdown.xiaoshujiang.com/b3d7743d-747c-488f-8b24-5ef40c9c6b38" alt="选择JDK版本"></p>
-<ol start="3">
-<li>打开控制台，查看yum库中有哪些jdk版本<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum search java|grep jdk</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># rpm -ivh 文件名</span></span><br></pre></td></tr></table></figure>
+<p>额外相关指令<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/profile</span><br><span class="line">// ESC退出编辑wq保存，让配置生效</span><br><span class="line"><span class="built_in">source</span> /etc/profile</span><br></pre></td></tr></table></figure></p>
         
           <a class="article-more-a" href="/notes/2018-10-04/CentOS上部署Spring-boot项目.html#more">阅读全文 >></a>
         
@@ -1070,19 +1067,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">life</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">skill</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1094,7 +1079,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">life</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">wechat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
