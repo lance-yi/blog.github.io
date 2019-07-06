@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Lance YI-Blog</title>
+  <title>Lanceyi Blog</title>
   
-  <subtitle>以戒为师 以苦为师</subtitle>
+  <subtitle>STAY HUNGRY. STAY FOOLISH.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://blog.LanceYI.com/"/>
+  <link href="https://blog.Lanceyi.com/"/>
   <updated>2018-10-10T09:40:11.688Z</updated>
-  <id>https://blog.LanceYI.com/</id>
+  <id>https://blog.Lanceyi.com/</id>
   
   <author>
     <name>Lance YI</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>CentOS上部署Spring boot项目</title>
-    <link href="https://blog.LanceYI.com/notes/2018-10-04/CentOS%E4%B8%8A%E9%83%A8%E7%BD%B2Spring-boot%E9%A1%B9%E7%9B%AE.html"/>
-    <id>https://blog.LanceYI.com/notes/2018-10-04/CentOS上部署Spring-boot项目.html</id>
+    <link href="https://blog.Lanceyi.com/notes/2018-10-04/CentOS%E4%B8%8A%E9%83%A8%E7%BD%B2Spring-boot%E9%A1%B9%E7%9B%AE.html"/>
+    <id>https://blog.Lanceyi.com/notes/2018-10-04/CentOS上部署Spring-boot项目.html</id>
     <published>2018-10-04T13:04:11.000Z</published>
     <updated>2018-10-10T09:40:11.688Z</updated>
     
@@ -36,21 +36,21 @@
     
     </summary>
     
-      <category term="notes" scheme="https://blog.LanceYI.com/categories/notes/"/>
+      <category term="notes" scheme="https://blog.Lanceyi.com/categories/notes/"/>
     
     
-      <category term="skill" scheme="https://blog.LanceYI.com/tags/skill/"/>
+      <category term="skill" scheme="https://blog.Lanceyi.com/tags/skill/"/>
     
-      <category term="java" scheme="https://blog.LanceYI.com/tags/java/"/>
+      <category term="java" scheme="https://blog.Lanceyi.com/tags/java/"/>
     
-      <category term="Spring Boot" scheme="https://blog.LanceYI.com/tags/Spring-Boot/"/>
+      <category term="Spring Boot" scheme="https://blog.Lanceyi.com/tags/Spring-Boot/"/>
     
   </entry>
   
   <entry>
     <title>GIT使用出现错误解决方案-持续更新中</title>
-    <link href="https://blog.LanceYI.com/notes/2018-10-04/GIT%E4%BD%BF%E7%94%A8%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD.html"/>
-    <id>https://blog.LanceYI.com/notes/2018-10-04/GIT使用出现错误解决方案-持续更新中.html</id>
+    <link href="https://blog.Lanceyi.com/notes/2018-10-04/GIT%E4%BD%BF%E7%94%A8%E5%87%BA%E7%8E%B0%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD.html"/>
+    <id>https://blog.Lanceyi.com/notes/2018-10-04/GIT使用出现错误解决方案-持续更新中.html</id>
     <published>2018-10-04T13:02:56.000Z</published>
     <updated>2018-10-04T13:03:46.767Z</updated>
     
@@ -62,19 +62,19 @@
     
     </summary>
     
-      <category term="notes" scheme="https://blog.LanceYI.com/categories/notes/"/>
+      <category term="notes" scheme="https://blog.Lanceyi.com/categories/notes/"/>
     
     
-      <category term="skill" scheme="https://blog.LanceYI.com/tags/skill/"/>
+      <category term="skill" scheme="https://blog.Lanceyi.com/tags/skill/"/>
     
-      <category term="git" scheme="https://blog.LanceYI.com/tags/git/"/>
+      <category term="git" scheme="https://blog.Lanceyi.com/tags/git/"/>
     
   </entry>
   
   <entry>
     <title>intellij IDEA 使用部署注意事项</title>
-    <link href="https://blog.LanceYI.com/notes/2018-10-04/intellij-IDEA-%E4%BD%BF%E7%94%A8%E9%83%A8%E7%BD%B2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.html"/>
-    <id>https://blog.LanceYI.com/notes/2018-10-04/intellij-IDEA-使用部署注意事项.html</id>
+    <link href="https://blog.Lanceyi.com/notes/2018-10-04/intellij-IDEA-%E4%BD%BF%E7%94%A8%E9%83%A8%E7%BD%B2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.html"/>
+    <id>https://blog.Lanceyi.com/notes/2018-10-04/intellij-IDEA-使用部署注意事项.html</id>
     <published>2018-10-04T13:00:25.000Z</published>
     <updated>2018-10-04T13:01:28.009Z</updated>
     
@@ -88,19 +88,19 @@
     
     </summary>
     
-      <category term="notes" scheme="https://blog.LanceYI.com/categories/notes/"/>
+      <category term="notes" scheme="https://blog.Lanceyi.com/categories/notes/"/>
     
     
-      <category term="skill" scheme="https://blog.LanceYI.com/tags/skill/"/>
+      <category term="skill" scheme="https://blog.Lanceyi.com/tags/skill/"/>
     
-      <category term="java" scheme="https://blog.LanceYI.com/tags/java/"/>
+      <category term="java" scheme="https://blog.Lanceyi.com/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>vue开发微信公众号支付防止采坑指南秘籍</title>
-    <link href="https://blog.LanceYI.com/notes/2018-10-04/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7SPA%E6%94%AF%E4%BB%98%E9%98%B2%E6%AD%A2%E9%87%87%E5%9D%91%E6%8C%87%E5%8D%97.html"/>
-    <id>https://blog.LanceYI.com/notes/2018-10-04/微信公众号SPA支付防止采坑指南.html</id>
+    <link href="https://blog.Lanceyi.com/notes/2018-10-04/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7SPA%E6%94%AF%E4%BB%98%E9%98%B2%E6%AD%A2%E9%87%87%E5%9D%91%E6%8C%87%E5%8D%97.html"/>
+    <id>https://blog.Lanceyi.com/notes/2018-10-04/微信公众号SPA支付防止采坑指南.html</id>
     <published>2018-10-04T12:50:49.000Z</published>
     <updated>2018-10-04T12:58:41.659Z</updated>
     
@@ -117,19 +117,19 @@
     
     </summary>
     
-      <category term="notes" scheme="https://blog.LanceYI.com/categories/notes/"/>
+      <category term="notes" scheme="https://blog.Lanceyi.com/categories/notes/"/>
     
     
-      <category term="skill" scheme="https://blog.LanceYI.com/tags/skill/"/>
+      <category term="skill" scheme="https://blog.Lanceyi.com/tags/skill/"/>
     
-      <category term="wechat" scheme="https://blog.LanceYI.com/tags/wechat/"/>
+      <category term="wechat" scheme="https://blog.Lanceyi.com/tags/wechat/"/>
     
   </entry>
   
   <entry>
     <title>自学Java中，一份答答租车系统作业~</title>
-    <link href="https://blog.LanceYI.com/notes/2018-06-17/imooctask.html"/>
-    <id>https://blog.LanceYI.com/notes/2018-06-17/imooctask.html</id>
+    <link href="https://blog.Lanceyi.com/notes/2018-06-17/imooctask.html"/>
+    <id>https://blog.Lanceyi.com/notes/2018-06-17/imooctask.html</id>
     <published>2018-06-17T15:31:00.000Z</published>
     <updated>2018-06-17T16:10:21.631Z</updated>
     
@@ -143,19 +143,19 @@
     
     </summary>
     
-      <category term="notes" scheme="https://blog.LanceYI.com/categories/notes/"/>
+      <category term="notes" scheme="https://blog.Lanceyi.com/categories/notes/"/>
     
     
-      <category term="skill" scheme="https://blog.LanceYI.com/tags/skill/"/>
+      <category term="skill" scheme="https://blog.Lanceyi.com/tags/skill/"/>
     
-      <category term="java" scheme="https://blog.LanceYI.com/tags/java/"/>
+      <category term="java" scheme="https://blog.Lanceyi.com/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>java初学者总结的一些注意事项</title>
-    <link href="https://blog.LanceYI.com/notes/2018-06-05/javabeginner.html"/>
-    <id>https://blog.LanceYI.com/notes/2018-06-05/javabeginner.html</id>
+    <link href="https://blog.Lanceyi.com/notes/2018-06-05/javabeginner.html"/>
+    <id>https://blog.Lanceyi.com/notes/2018-06-05/javabeginner.html</id>
     <published>2018-06-05T02:47:35.000Z</published>
     <updated>2018-10-04T12:51:43.103Z</updated>
     
@@ -173,19 +173,19 @@
     
     </summary>
     
-      <category term="notes" scheme="https://blog.LanceYI.com/categories/notes/"/>
+      <category term="notes" scheme="https://blog.Lanceyi.com/categories/notes/"/>
     
     
-      <category term="skill" scheme="https://blog.LanceYI.com/tags/skill/"/>
+      <category term="skill" scheme="https://blog.Lanceyi.com/tags/skill/"/>
     
-      <category term="java" scheme="https://blog.LanceYI.com/tags/java/"/>
+      <category term="java" scheme="https://blog.Lanceyi.com/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>腾讯免费安全认证（SSL）安装(CentOS,LAMP)</title>
-    <link href="https://blog.LanceYI.com/notes/2018-06-02/ssl.html"/>
-    <id>https://blog.LanceYI.com/notes/2018-06-02/ssl.html</id>
+    <link href="https://blog.Lanceyi.com/notes/2018-06-02/ssl.html"/>
+    <id>https://blog.Lanceyi.com/notes/2018-06-02/ssl.html</id>
     <published>2018-06-02T02:30:51.000Z</published>
     <updated>2018-06-02T10:49:05.760Z</updated>
     
@@ -197,21 +197,21 @@
     
     </summary>
     
-      <category term="notes" scheme="https://blog.LanceYI.com/categories/notes/"/>
+      <category term="notes" scheme="https://blog.Lanceyi.com/categories/notes/"/>
     
     
-      <category term="skill" scheme="https://blog.LanceYI.com/tags/skill/"/>
+      <category term="skill" scheme="https://blog.Lanceyi.com/tags/skill/"/>
     
-      <category term="liunx" scheme="https://blog.LanceYI.com/tags/liunx/"/>
+      <category term="liunx" scheme="https://blog.Lanceyi.com/tags/liunx/"/>
     
-      <category term="LAMP" scheme="https://blog.LanceYI.com/tags/LAMP/"/>
+      <category term="LAMP" scheme="https://blog.Lanceyi.com/tags/LAMP/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://blog.LanceYI.com/life/2018-06-01/hello-world.html"/>
-    <id>https://blog.LanceYI.com/life/2018-06-01/hello-world.html</id>
+    <link href="https://blog.Lanceyi.com/life/2018-06-01/hello-world.html"/>
+    <id>https://blog.Lanceyi.com/life/2018-06-01/hello-world.html</id>
     <published>2018-06-01T15:40:03.000Z</published>
     <updated>2018-06-02T02:17:41.595Z</updated>
     
@@ -223,12 +223,12 @@
     
     </summary>
     
-      <category term="life" scheme="https://blog.LanceYI.com/categories/life/"/>
+      <category term="life" scheme="https://blog.Lanceyi.com/categories/life/"/>
     
     
-      <category term="life" scheme="https://blog.LanceYI.com/tags/life/"/>
+      <category term="life" scheme="https://blog.Lanceyi.com/tags/life/"/>
     
-      <category term="hexo" scheme="https://blog.LanceYI.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://blog.Lanceyi.com/tags/hexo/"/>
     
   </entry>
   

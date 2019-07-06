@@ -1,8 +1,8 @@
-https://blog.LanceYI.com/notes/2018-10-04/CentOS上部署Spring-boot项目.html
-https://blog.LanceYI.com/notes/2018-10-04/GIT使用出现错误解决方案-持续更新中.html
-https://blog.LanceYI.com/notes/2018-10-04/intellij-IDEA-使用部署注意事项.html
-https://blog.LanceYI.com/notes/2018-10-04/微信公众号SPA支付防止采坑指南.html
-https://blog.LanceYI.com/notes/2018-06-17/imooctask.html
-https://blog.LanceYI.com/notes/2018-06-05/javabeginner.html
-https://blog.LanceYI.com/notes/2018-06-02/ssl.html
-https://blog.LanceYI.com/life/2018-06-01/hello-world.html
+https://blog.Lanceyi.com/notes/2018-10-04/CentOS上部署Spring-boot项目.html
+https://blog.Lanceyi.com/notes/2018-10-04/GIT使用出现错误解决方案-持续更新中.html
+https://blog.Lanceyi.com/notes/2018-10-04/intellij-IDEA-使用部署注意事项.html
+https://blog.Lanceyi.com/notes/2018-10-04/微信公众号SPA支付防止采坑指南.html
+https://blog.Lanceyi.com/notes/2018-06-17/imooctask.html
+https://blog.Lanceyi.com/notes/2018-06-05/javabeginner.html
+https://blog.Lanceyi.com/notes/2018-06-02/ssl.html
+https://blog.Lanceyi.com/life/2018-06-01/hello-world.html

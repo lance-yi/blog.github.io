@@ -116,8 +116,8 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'http://files.ydsweb.cn/image/life/' + data.link[i] + '.jpg';
-          var src = 'http://files.ydsweb.cn/image/life/' + data.link[i];
+          var minSrc = 'http://bonjour.lanceyi.com/image/life/' + data.link[i] + '.jpg';
+          var src = 'http://bonjour.lanceyi.com/image/life/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '.jpg';

@@ -5,15 +5,15 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="https://blog.LanceYI.com">
-  <title>腾讯免费安全认证（SSL）安装(CentOS,LAMP) | Lance YI-Blog</title>
+  <link rel="dns-prefetch" href="https://blog.Lanceyi.com">
+  <title>腾讯免费安全认证（SSL）安装(CentOS,LAMP) | Lanceyi Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="第一次写博客，有点小紧张，搭建博客的主要目的呢，第一是解放自己浏览器的书签栏，真的是太多啦(～￣▽￣)～；第二是总结自己在工作的小难点，方便以后回顾避免再次入坑。好了，话不多说，开始我我们今天的主题吧。下面就以我的个人服务器和域名作为案例讲解，服务器（阿里云）,系统CenteOS 64位 , 域名（腾讯云），下面可能会用到Linux的命令，如果你还不会的话，可以先照着我的做，或者你自己恶补一下。">
 <meta name="keywords" content="skill,liunx,LAMP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="腾讯免费安全认证（SSL）安装(CentOS,LAMP)">
-<meta property="og:url" content="https://blog.LanceYI.com/notes/2018-06-02/ssl.html">
-<meta property="og:site_name" content="Lance YI-Blog">
+<meta property="og:url" content="https://blog.Lanceyi.com/notes/2018-06-02/ssl.html">
+<meta property="og:site_name" content="Lanceyi Blog">
 <meta property="og:description" content="第一次写博客，有点小紧张，搭建博客的主要目的呢，第一是解放自己浏览器的书签栏，真的是太多啦(～￣▽￣)～；第二是总结自己在工作的小难点，方便以后回顾避免再次入坑。好了，话不多说，开始我我们今天的主题吧。下面就以我的个人服务器和域名作为案例讲解，服务器（阿里云）,系统CenteOS 64位 , 域名（腾讯云），下面可能会用到Linux的命令，如果你还不会的话，可以先照着我的做，或者你自己恶补一下。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://files.ydsweb.cn/image/ssl/%7BIG7N%5BWE5L%5B5PM5%60FH2UD%25I.png">
@@ -29,7 +29,7 @@
 <meta name="twitter:image" content="http://files.ydsweb.cn/image/ssl/%7BIG7N%5BWE5L%5B5PM5%60FH2UD%25I.png">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -69,7 +69,7 @@ var _hmt = _hmt || [];
 		  <h1 class="header-author"><a href="">Lance YI</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">以戒为师 以苦为师</p>
+		<p class="header-subtitle">STAY HUNGRY. STAY FOOLISH.</p>
 		
 
 		<nav class="header-menu">
@@ -133,7 +133,7 @@ var _hmt = _hmt || [];
 			  <h1 class="header-author js-header-author">Lance YI</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>以戒为师 以苦为师<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>STAY HUNGRY. STAY FOOLISH.<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -406,7 +406,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://blog.LanceYI.com/notes/2018-06-02/ssl.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://blog.Lanceyi.com/notes/2018-06-02/ssl.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -485,7 +485,7 @@ var _hmt = _hmt || [];
     <div id="footer-info">
       <div class="footer-left">
         &copy;
-        2018
+        2019
           Lance YI
       </div>
       <!--统计start-->
@@ -647,14 +647,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">life</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">skill</a>
               </li>
              
@@ -663,7 +655,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">wechat</a>
+                <a href="javascript:void(0)" class="js-tag color5">life</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -672,6 +668,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">wechat</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -729,6 +729,10 @@ MathJax.Hub.Queue(function() {
     	<section class="tools-section tools-section-friends" q-show="friends">
   		
         <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="https://www.p7ing.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>普擎官网</a>
+            </li>
           
             <li class="search-li">
               <a href="http://www.runoob.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>菜鸟教程</a>
